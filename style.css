@@ -1,0 +1,196 @@
+html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(152, 235, 226);
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+/*CALCULATOR*/
+
+/*CALCULATOR-BODY*/
+
+body #calculator{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    z-index: 0;
+}
+
+#calculator_body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 535px;
+    height: auto;
+    padding: 15px 7px 10px 15px;
+    background-color: rgb(175, 230, 175);
+
+    border-top: 12px solid rgba(116, 180, 218, 0.979);
+    border-right: 12px solid rgba(116, 180, 218, 0.979);
+    border-bottom: none;
+    border-left: none;
+    box-shadow: -20px 17px rgb(19, 52, 95);
+    transition: 0.9s;
+}
+
+#calculator_body:hover{
+    transform: translateX(10px) translateY(-12px);
+    box-shadow: -10px 7px rgb(19, 52, 95);
+}
+
+.row{
+    display: flex;
+}
+
+/*TITLE + SCREEN*/
+
+#screen-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+    cursor: default;
+}
+
+#title{
+    text-align: left;
+    width: 98%;
+    font-size: 20px;
+    height: 40px;
+    cursor: default;
+
+}
+
+#screen{
+    background-color: rgb(10, 44, 23);
+    width: 450px;
+    height: 80px;
+    line-height: 80px;
+    color: rgb(152, 235, 226);
+    text-align: right;
+    font-size: 60px;
+    margin: 8px;
+    word-wrap: break-word;
+    border-radius: 3px;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+#led{
+    width: 20px;
+    height: 20px;
+    line-height: 80px;
+    background-color: rgb(11, 29, 53);
+    border-top: 9px solid gray;
+    border-right: 9px solid gray;
+    border-bottom: 9px solid lightgray;
+    border-left: 9px solid lightgray;
+    transition: 0.5s;
+}
+
+/*BUTTONS*/
+
+button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 34px;
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    background-color: rgb(100, 139, 103);
+    border-top: 9px solid rgba(116, 180, 218, 0.979);
+    border-right: 9px solid rgba(116, 180, 218, 0.979);
+    border-bottom: none;
+    border-left: none;
+    box-shadow: -9px 9px rgb(19, 52, 95);
+    cursor: pointer;
+    transition: 0.05s;
+}
+
+.numbers{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 34px;
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    background-color: rgb(175, 230, 175);
+    border-top: 9px solid rgba(116, 180, 218, 0.979);
+    border-right: 9px solid rgba(116, 180, 218, 0.979);
+    border-bottom: none;
+    border-left: none;
+    box-shadow: -9px 9px rgb(19, 52, 95);
+}
+
+button:active{
+    border-top: 9px solid rgb(19, 52, 95);
+    border-right: 9px solid rgb(19, 52, 95);
+    border-bottom: 9px solid  rgba(116, 180, 218, 0.979);
+    border-left: 9px solid  rgba(116, 180, 218, 0.979);
+    transform: translateX(-5px) translateY(5px);
+    box-shadow: none;
+}
+
+#power, #lastRow .numbers{
+    width: 256px;
+}
+
+#power, #equal{
+    background-color: rgb(117, 230, 250);
+}
+
+
+/*PIXELART HAND */
+
+#handImg{
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 0.7s;
+    width: 800px;
+    transform: rotate(-60deg);
+    pointer-events: none;
+    filter: blur(8px);
+}
+
+
+/*PIXELART FINGER*/
+
+#fingerImg{
+    position: absolute;
+    left: 590px;
+    top: 0px;
+    z-index: 1;
+    transition: 0.02s;
+    pointer-events: none;
+    opacity: 0.5;
+    width: 2080px;
+    filter: blur(4px);
+}
+
+
+/*FOOTER*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    font-size: 15px;
+    text-align: right;
+    transition: 0.1s;
+    width: 97%;
+    cursor: default;
+}
+
+footer:hover{
+    font-size: 20px;
+}

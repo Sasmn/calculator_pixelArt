@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <div id="calculator_body">
+            <div id="title">Calculator</div>
+            
+            <div id="screen-container">
+                <div id="led"></div>
+                <div id="screen"></div>
+            </div>
+            <div id="buttons">
+                <div class="row">
+                    <button id="power">Power</button>
+                    <button id="reset">C</button>
+                    <button class="operator" id="divide">÷</button>
+                </div>
+                <div class="row">
+                    <button class="numbers" id="7b" value="7">7</button>
+                    <button class="numbers" id="8b" value="8">8</button>
+                    <button class="numbers" id="9b" value="9">9</button>
+                    <button class="operator" id="multiply">x</button>
+                </div>
+                <div class="row">
+                    <button class="numbers" id="4b" value="4">4</button>
+                    <button class="numbers" id="5b" value="5">5</button>
+                    <button class="numbers" id="6b" value="6">6</button>
+                    <button class="operator" id="add">+</button>
+                </div>
+                <div class="row">
+                    <button class="numbers" id="1b" value="1">1</button>
+                    <button class="numbers" id="2b" value="2">2</button>
+                    <button class="numbers" id="3b" value="3">3</button>
+                    <button class="operator" id="substract">-</button>
+                </div>
+                <div class="row" id="lastRow">
+                    <button class="numbers" id="0b" value="0">0</button>
+                    <button id="point" value=".">.</button>
+                    <button id="equal" class="operator">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="hand">
+        <img id="handImg" src="pictures/pixelart_hand_upscaled_left.png" alt="A hand in pixel art.">
+    </div>
+
+    <div id="finger">
+        <img id="fingerImg" src="pictures/pixelart_finger_upscaled.jpg" alt="">
+    </div>
+
+
+    <footer>Sasi Domonkos @ 2022</footer>
+</body>
+</html>
